@@ -53,7 +53,7 @@
             position: absolute;
             height: 95%;
             width: 150%;
-            background-image: linear-gradient(90deg, rgb(51, 51, 249), rgb(57, 222, 251));
+            background-image: linear-gradient(90deg, rgb(14, 14, 240), rgb(57, 222, 251));
             z-index: -1;
             transform: rotate(188deg) translate(100px, 100px);
         }
@@ -169,13 +169,13 @@
         }
         .main{
             display: flex;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-content: space-evenly;
-            width: 80%;
-            height: 10%;
-            margin-left:11rem;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-content: space-evenly; */
+            /* width: 90%;
+            height: 10%; */
+            gap: 2rem;
+            margin-left:20rem;
             padding-top: 5rem;
-            gap: rem;
             /* background-color: aqua; */
         }
         .a{
@@ -195,55 +195,12 @@
             margin: 1.5rem;
             color:black;
          }
-        .d{ 
+        .card{ 
             font-size: 4rem;
-            margin: 1rem;
+            margin-left: 1.5rem;
             color: rgb(40, 114, 242);
         } 
-        .b{
-            background-color: rgba(253, 234, 126, 0.829);
-            color: black;
-            margin: 2rem;
-            font-size: 1.3rem;
-            border-radius: 2rem;
-            width: 20%;
-            height:40vh;
-        }
-        .b h2{
-           font-size: 1.3rem;
-           margin-left: 1.5rem;
-         }
-         .b p{
-            margin: 1.5rem;
-            color: black;
-         }
-        .f{
-            font-size: 4rem;
-            margin: 1rem;
-            color: rgb(40, 114, 242); 
-        }
-        .c{
-            background-color:  rgba(253, 234, 126, 0.829);
-            color: black;
-            margin: 2rem;
-            font-size: 1.3rem;
-            border-radius: 2rem;
-            width: 20%;
-            height:40vh;  
-        }
-        .c h2{
-           font-size: 1.3rem;
-           margin-left: 1.5rem;
-         }
-         .c p{
-            margin: 1.5rem;
-            color: black;
-         }
-        .e{ 
-            font-size: 4rem;
-            margin: 1rem;
-            color: rgb(40, 114, 242);
-        } 
+       
         .bg-color{
             width: 80%;
             height: 80%;
@@ -266,6 +223,31 @@
         .text b{
             font-size: 2.5rem;
         } 
+        .main-class{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            /* align-items: center; */
+            width: 100%;
+            height: 100%;
+            /* background-color: aqua; */
+            padding: 10rem;
+            margin-left: 4rem;
+            /* font-family: sans-serif; */
+            font-weight: 500;
+        }
+        .connect p{
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgb(53, 53, 238);
+        }
+        .address h4{
+            color: rgb(53, 53, 238);
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* line-height: 4rem; */
+            padding-top: 1.5rem;
+        }
     </style>
 </head>
 
@@ -317,22 +299,22 @@
             </div>
         <div class="main">
             <div class="a">
-                <div class="d">
+                <div class="card">
                  <i class="fa-regular fa-comment fa-rotate-270 fa-sm"></i>
                 </div>
-             <h2>App Consultancy</h2><p>We help you define the best features for your app.</p>
+             <h2>App Consultancy</h2><p>We help you define <br>the best features for <br>your app.</p>
             </div>
-            <div class="b">
-                <div class="f">
+            <div class="a">
+                <div class="card">
                   <i class="fa-solid fa-table-columns fa-sm"></i>
                 </div>
-                <h2>UX and UI Design</h2><p>We provide outstanding app design for your users.</p>
+                <h2>UX and UI Design</h2><p>We provide <br> outstanding app <br>design for your users.</p>
             </div>
-            <div class="c">
-                <div class="e">
+            <div class="a">
+                <div class="card">
                     <i class="fa-regular fa-window-maximize fa-sm"></i>
                 </div>
-                <h2>App Development</h2><p>employ a team of experts to build your app.</p>
+                <h2>App Development</h2><p>employ a team <br>of experts to build <br> your app.</p>
             </div>
         </div>
     </section>
@@ -344,7 +326,17 @@
         </div>
     </section>
     <section class="container">
-
+        <div class="main-class">
+            <div class="connect">
+               <p>Connect with Us</p>
+               <br>Twitter <br> Facebook <br> Instagram
+            </div>
+            <div class="address">
+                <h4>Mailling Address</h4>123 Anywhere St.Any <br>City State, Country 123456 
+                <h4>Email Address</h4>hello@12345gmail.com
+                <h4>Phone Number</h4>1234567890
+            </div>
+        </div>
     </section>
 </body>
 
